@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Get To Know You - All About Juscy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Get To Know You 💌</h1>
+
+<nav>
+<a href="index.html">Home</a> |
+<a href="hobbies.html">My Hobbies</a> |
+<a href="goals.html">My Goals</a> |
+<a href="contact.html">Contact</a> |
+<a href="reading.html">Reading List</a> |
+<a href="playlist.html">My Playlist</a> |
+<a href="survey.html">Quiz</a> 
+</nav>
+</header>
+
+<main>
+  
+
+<h2>I hope you enjoyed learning more about me!</h2>
+
+<p>Answer a few fun questions and let's find out how much we have in common. Fill in the form below!</p>
+
+<div class="survey-form-wrapper">
+  <form class="survey-form" action="#" method="post">
+
+    
+    <fieldset class="form-section">
+      <legend>About You</legend>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Your Name <span class="required">*</span></label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="e.g. Sofia"
+            required
+            minlength="2"
+            title="Please enter your name (at least 2 characters)"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="age">Your Age <span class="required">*</span></label>
+          <input
+            type="number"
+            id="age"
+            name="age"
+            placeholder="e.g. 19"
+            required
+            min="13"
+            max="100"
+            title="Please enter a valid age between 13 and 100"
+          >
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="your@email.com"
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+            title="Please enter a valid email address"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="country">Where are you from? <span class="required">*</span></label>
+          <select id="country" name="country" required title="Please select your country">
+            <option value="">-- Select a country --</option>
+            <option value="ireland">Ireland 🍀</option>
+            <option value="uk">United Kingdom</option>
+            <option value="usa">United States</option>
+            <option value="nigeria">Nigeria</option>
+            <option value="brazil">Brazil</option>
+            <option value="portugal">Portugal</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+    </fieldset>
+
+   
+    <fieldset class="form-section">
+      <legend>Personality Check </legend>
+
+      <div class="form-group">
+        <label>Are you more of a... <span class="required">*</span></label>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" name="personality" value="morning" required>
+            ☀️ Morning person
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="personality" value="night">
+            🌙 Night owl
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="personality" value="both">
+            😅 Both (same lol)
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Pick your vibe (choose all that apply) <span class="required">*</span></label>
+        <div class="checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" name="vibe" value="music">  Music lover
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="vibe" value="books">  Bookworm
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="vibe" value="travel">  Travel addict
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="vibe" value="art"> Artsy soul
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="vibe" value="foodie">  Foodie
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="vibe" value="homebody">  Homebody
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="fav-season">Your favourite season <span class="required">*</span></label>
+        <select id="fav-season" name="fav-season" required title="Please pick a season">
+          <option value="">-- Choose one --</option>
+          <option value="spring"> Spring</option>
+          <option value="summer"> Summer</option>
+          <option value="autumn"> Autumn</option>
+          <option value="winter"> Winter</option>
+        </select>
+      </div>
+    </fieldset>
+
+    
+    <fieldset class="form-section">
+      <legend>What We Might Have In Common </legend>
+
+      <div class="form-group">
+        <label for="fav-artist">Favourite artist or band <span class="required">*</span></label>
+        <input
+          type="text"
+          id="fav-artist"
+          name="fav-artist"
+          placeholder="e.g. SZA, Frank Ocean..."
+          required
+          minlength="2"
+          title="Please enter your favourite artist"
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="fav-book">A book you'd recommend</label>
+        <input
+          type="text"
+          id="fav-book"
+          name="fav-book"
+          placeholder="e.g. The Alchemist"
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="rating">How would you rate this experience :b <span class="required">*</span></label>
+        <input
+          type="number"
+          id="rating"
+          name="rating"
+          min="1"
+          max="10"
+          placeholder="1–10"
+          required
+          title="Rate from 1 to 10"
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="message">Anything you want! <span class="required">*</span></label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          placeholder="A fun fact, a quote you love, literally anything..."
+          required
+          minlength="10"
+          title="Please write at least 10 characters"
+        ></textarea>
+      </div>
+    </fieldset>
+
+    <div class="form-footer">
+      <p class="required-note"><span class="required">*</span> Required fields</p>
+      <div class="form-buttons">
+        <button type="reset" class="btn-reset">Clear Form</button>
+        <button type="submit" class="btn-submit">Submit ✨</button>
+      </div>
+    </div>
+
+  </form>
+</div>
+
+</main>
+
+<footer>
+<p>Return to the <a href="index.html">home page</a></p>
+</footer>
+
+
+<script>
+  document.querySelector('.survey-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    if (this.checkValidity()) {
+      this.innerHTML = '<div style="text-align:center; padding: 60px 20px;"><p style="font-size:2rem;">🎉</p><h2 style="border:none; margin-top:0;">Yay, submitted!</h2><p>Thanks for filling this in ! Hope you enjoyedd !!</p></div>';
+    }
+  });
+</script>
+
+</body>
+</html>
